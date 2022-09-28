@@ -1,0 +1,13 @@
+.body-left-stage3 {
+  
+}
+.body-left-stage3 > h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: var(--secondary-gap) 0;
+}
+.body-left-stage3 > h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: var(--secondary-gap) 0;
+}

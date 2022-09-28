@@ -1,0 +1,64 @@
+.paginationWrapper {
+  position: sticky;
+  bottom: 0%;
+  right: 0%;
+  width: min-content;
+  float: right;
+}
+.pagination {
+  position: relative;
+  bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: min-content;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  animation-name: itemAnim;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.pagination > li {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  border-radius: 20%;
+  margin: 0 calc(var(--primary-gap) / 3);
+  list-style: none;
+  font-size: 2.4rem;
+}
+.pagination > li:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 1px rgb(26 25 25 / 50%);
+  background-image: linear-gradient(45deg, var(--color-4), var(--color-3));
+}
+.paginationActive {
+  box-shadow: 0 0 3px 1px rgb(26 25 25 / 50%);
+  background-image: linear-gradient(45deg, var(--color-4), var(--color-3));
+}
+.pagination > li > i {
+  position: absolute;
+  transform: translateY(29%);
+}
+@keyframes itemAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pagination > li {
+    width: 2.3rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    font-size: 1.8rem;
+  }
+}

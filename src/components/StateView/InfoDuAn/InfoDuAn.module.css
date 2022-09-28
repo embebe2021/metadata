@@ -1,0 +1,34 @@
+.stateView__stage1{
+
+}
+.viewStage1{
+
+}
+.stateView--titles{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: var(--secondary-gap) 0px;
+}
+.viewStage1__table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+.viewStage1__tableBody {
+  position: relative;
+}
+.viewStage1__tableRow {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.viewStage1__tableCell--firstColumn {
+  width: 40%;
+}
+.viewStage1__tableCell--secondColumn {
+  width: 60%;
+}
+.viewStage1__tableCell {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

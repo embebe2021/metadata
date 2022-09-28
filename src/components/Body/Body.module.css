@@ -1,0 +1,16 @@
+.app__body {
+  padding: var(--primary-gap);
+  display: flex;
+  flex-direction: row;
+  gap: var(--primary-gap);
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1279px) {
+  .app__body {
+      flex-direction: column;
+  }
+}

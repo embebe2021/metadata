@@ -1,0 +1,36 @@
+.input__warpper {
+  background-color: var(--color-3);
+  border-radius: 3px;
+  margin: var(--secondary-gap) 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: calc(var(--secondary-gap) - 0.6rem);
+  min-height: var(--height);
+  overflow: hidden;
+  gap: var(--secondary-gap);
+}
+.input__label {
+  color: var(--primary-text-color);
+  display: inline-block;
+  white-space: nowrap;
+}
+.input__label:hover {
+  cursor: text;
+}
+.input__main {
+  flex-grow: 1;
+  border: none;
+  margin-left: var(--secondary-gap);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  border-radius: 3px;
+  padding: 0;
+  line-height: var(--height);
+  background-color: transparent;
+}
+.input__main:focus{
+  outline: none;
+  background-color: transparent;
+}

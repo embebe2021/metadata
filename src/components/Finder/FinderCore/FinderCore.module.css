@@ -1,0 +1,42 @@
+.bodySeparator {
+  border-bottom: 1px solid var(--secondary-text-color);
+  animation-name: searchSeparatorAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+@keyframes searchSeparatorAnim {
+  from {
+    width: 0%;
+  } to {
+    width: 100%;
+  }
+}
+.searchBoxContainer {
+
+}
+.searchBoxWrapper {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 150px;
+  z-index: 3;
+}
+.searchBoxWrapperOnHome {
+  min-height: 100%;
+}
+.searchBoxWrapperOnSearchMode {
+  top: 0%;
+}
+
+@media only screen and (max-width: 1439px) {
+  .searchBoxWrapper {
+    padding: 0 var(--primary-gap);
+  }
+}
+@media only screen and (max-width: 560px) {
+  .searchBoxWrapper {
+    height: 60px;
+  }
+}

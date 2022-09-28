@@ -1,0 +1,34 @@
+.footerWrapper {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 10rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid var(--primary-text-color);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.seacherFooter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerWrapper {
+    height: 7rem;
+    padding: 1rem;
+  }
+  .seacherFooter {
+    height: 7rem;
+  }
+  .seacherFooter div {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+}

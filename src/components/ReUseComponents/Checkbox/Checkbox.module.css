@@ -1,0 +1,4 @@
+.checkBox {
+  transform: scale(1.4);
+  margin: var(--secondary-gap);
+}

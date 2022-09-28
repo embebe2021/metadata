@@ -1,0 +1,33 @@
+.stateView__stage2{
+
+}
+.viewStage2{
+
+}
+.stateView--titles {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: var(--secondary-gap) 0px;
+}
+.viewStage2__table {
+  position: relative;
+  width: 100%;
+}
+.viewStage2__tableBody {
+  position: relative;
+}
+.viewStage2__tableRow {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.viewStage2__tableCell--firstColumn {
+  width: 40%;
+}
+.viewStage2__tableCell--secondColumn {
+  width: 60%;
+}
+.viewStage2__tableCell {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

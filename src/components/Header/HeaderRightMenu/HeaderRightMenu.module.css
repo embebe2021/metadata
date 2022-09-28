@@ -1,0 +1,269 @@
+.header__rightIcon {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header__rightIcon:hover {
+  background-color: var(--color-2);
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  right: var(--primary-gap);
+  top: 80%;
+  width: 30rem;
+  height: min-content;
+  background-image: linear-gradient(145deg, var(--color-4), var(--color-1));
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+  animation-name: menuShow;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.menuWrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes menuShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+.notice {
+  position: absolute;
+  background-color: royalblue;
+  top: 107%;
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+  padding: var(--secondary-gap);
+}
+.notice::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: royalblue;
+  content: "";
+  position: absolute;
+  left: 47.2%;
+  transform: rotate(135deg) skewX(5deg) skewY(5deg);
+  top: -8px;
+  border-left: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid var(--primary-text-color);
+}
+.userIcon {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userIcon:hover {
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.userIconSVG {
+  scale: 1.6;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.userId,
+.userName {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin: 0px;
+}
+.button {
+  font-family: var(--primary-font);
+  font-size: 1.9rem;
+  line-height: 4rem;
+  width: 18rem;
+  text-align: center;
+  border-radius: 5px;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+.button:hover {
+  margin: -1px;
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.button:focus {
+  outline: none;
+  margin: -1px;
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.button > i {
+  margin-right: 1.2rem;
+}
+.mid {
+  border-top: 1px solid var(--primary-text-color);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.appListTitlle {
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.appList {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto auto;
+}
+.appItem {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+.appItem:hover {
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+  cursor: pointer;
+}
+.appItem:focus {
+  border: 1px solid var(--primary-text-color);
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.appItem > i {
+  scale: 1.5;
+}
+.appItem:disabled {
+  background-color: var(--color-3);
+}
+.appItemActive {
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+
+.bottom {
+  border-top: 1px solid var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.signInTitle {
+  font-weight: bold;
+  margin: var(--secondary-gap) 0;
+}
+.signInInfo {
+  position: relative;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 20px;
+  padding: 0 10px;
+}
+.signInInfo:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+.signInInfo:focus-within {
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.signInInfoInput {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.signInInfoInput:focus,
+.signInInfoBtn {
+  outline: none;
+}
+.signInInfoInput::placeholder {
+  color: var(--primary-text-color);
+}
+.signInInfoBtn {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.signInInfoBtn > i {
+  font-size: 1.4rem;
+}
+.signInInfoBtn > i:hover {
+  cursor: pointer;
+}
+.signInInfoBtn:focus-within {
+  border-radius: 10px;
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 45%);
+}
+.signInInfo,
+.signInInfoBtn > i {
+  animation-name: showInput;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes showInput {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.topRemove {
+  animation-name: removeTop;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes removeTop {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 559px) {
+  .top {
+    padding: 2rem;
+  }
+}

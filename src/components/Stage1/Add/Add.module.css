@@ -1,0 +1,35 @@
+.body-left-stage1-project__add {
+  margin-top: var(--secondary-gap);
+}
+.body-left-stage1-project__add > span {
+  font-size: 1.8rem;
+}
+.body--input-date-status {
+  color: red;
+  font-weight: bold;
+  margin-bottom: var(--secondary-gap);
+  animation-name: anim-lineUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+/* Start Text Effect */
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* End Text Effect */

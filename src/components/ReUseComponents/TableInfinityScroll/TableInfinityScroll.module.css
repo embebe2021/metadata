@@ -1,0 +1,145 @@
+.viewStage__tableInfinityContainer {
+  position: fixed;
+  top: calc(10rem + var(--primary-gap));
+  right: var(--primary-gap);
+  left: var(--primary-gap);
+  background-image: linear-gradient(15deg, var(--color-1), var(--color-4));
+  overflow: hidden;
+  border-radius: 10px;
+  padding: var(--primary-gap);
+  padding-top: 0;
+  box-shadow: 1px 1px 5px 1px rgb(0,0,0, 0.3);
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  z-index: 999;
+}
+.tableInfinity {
+
+}
+
+.viewStageInfinity--animOn {
+    animation-name: containerAnimOn;
+}
+@keyframes containerAnimOn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.viewStageInfinity--animOff {
+  animation-name: containerAnimOff;
+}
+@keyframes containerAnimOff {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+.tableInfinity__closeIcon {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  left: calc(100% - var(--primary-gap));
+  border-radius: 10px;
+}
+.tableInfinity__closeIcon:hover {
+  background-color: #151965;
+}
+.tableInfinity__closeIcon > i {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tableInfinity__table {
+  position: relative;
+  width: 100%;
+  max-height: calc(100vh - 180px);
+  height: calc(100vh - 180px);
+  overflow-y: scroll;
+}
+.mainTable {
+  border-radius: 10px 10px 0px 0px;
+}
+.tableInfinity__table::-webkit-scrollbar{
+  background-color: var(--color-3);
+  width: calc(var(--secondary-gap));
+  border-radius: 12px;
+  box-shadow: inset 2px 0px 2px 2px rgba(26, 25, 25, 0.3);
+}
+.tableInfinity__table::-webkit-scrollbar-thumb {
+  background-color: var(--color-1);
+  box-shadow: inset 1px 1px 2px 2px rgba(26, 25, 25, 0.3);
+  border-radius: 12px;
+}
+.tableInfinity__table::-webkit-scrollbar-thumb:active {
+  background-image: linear-gradient(90deg, var(--color-4), var(--color-1));
+}
+.mainTable--headTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.mainTable--dataCell {
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mainTable__content {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+.mainTable__headRow {
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-1);
+  text-align: left;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 2;
+}
+.tableInfinity--row {
+  position: relative;
+  text-align: left;
+  align-items: center;
+  text-overflow: ellipsis;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.tableInfinity--row:hover {
+  background-color: var(--color-1);
+}
+.tableRow--animOn {
+  animation-name: rowAnimOn;
+}
+@keyframes rowAnimOn{
+  from {
+      bottom: -10px;
+      border-bottom: 0px solid var(--primary-text-color);
+      background-image: linear-gradient(40deg, var(--color-4), var(--color-2));
+  }
+  to { 
+      bottom: 0px;
+      border-bottom: 1px solid var(--primary-text-color);
+  }
+}
+.tableRow--animOff {
+  animation-name: rowAnimOff;
+}
+@keyframes rowAnimOff{
+  from {
+      bottom: 0px;
+  }
+  to { 
+      bottom: -10px;
+  }
+}

@@ -1,0 +1,40 @@
+.body-left {
+  order: 1;
+  background-color: var(--color-2);
+  flex-basis: 50%;
+  padding: var(--primary-gap);
+  animation-name: showAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.body-left__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: var(--secondary-gap);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body-left__title > h2 {
+  display: inline-block;
+  margin: 0 0 0 var(--secondary-gap);
+  line-height: 3rem;
+}
+@keyframes showAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .body-left {
+      order: 2;
+  }
+}

@@ -1,0 +1,28 @@
+.searchResultWrapper {
+  position: relative;
+  padding: 2rem 9.2rem;
+}
+.searchResultEstimate {
+  margin-bottom: var(--primary-gap);
+  font-size: 2rem;
+  line-height: 2.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.estimateIcon {
+  position: relative;
+  top: 3px;
+  margin-right: var(--secondary-gap);
+}
+.estimateTitle {
+}
+.searchResultItemWrapper {
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .searchResultWrapper {
+    padding: 2rem;
+  }
+}

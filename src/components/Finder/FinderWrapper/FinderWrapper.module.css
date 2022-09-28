@@ -1,0 +1,16 @@
+.body {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: calc(100vh - 200px);
+  flex-grow : 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.bodyWrapper {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}

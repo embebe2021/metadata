@@ -1,0 +1,46 @@
+.radio {
+  margin: var(--secondary-gap);
+}
+.radioInput {
+  position: absolute;
+  opacity: 0;
+}
+.radioLabel {
+  font-size: 1.8rem;
+}
+.radioLabel:hover {
+  cursor: pointer;
+  color: var(--color-4)
+}
+.radioInput + .radioLabel:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: -0.2em;
+  margin-right: var(--secondary-gap);
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radioInput:checked + .radioLabel:before {
+  background-image: linear-gradient(30deg, var(--color-4), var(--color-2));
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radioInput:focus + .radioLabel:before {
+  outline: none;
+  background-image: linear-gradient(30deg, var(--color-4), var(--color-2));
+}
+.radioInput:disabled + .radioLabel:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+.radioInput + .radioLabel:empty:before {
+  margin-right: 0;
+}

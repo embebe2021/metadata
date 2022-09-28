@@ -1,0 +1,36 @@
+.body--long-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--secondary-gap);
+  background-color: var(--color-3);
+  height: var(--height);
+  border-radius: 3px;
+  margin: var(--secondary-gap) 0;
+}
+.body--long-select > select {
+  width: 100%;
+  color: var(--primary-text-color);
+  background-color: var(--color-3);
+  appearance: none;
+  font-family: var(--primary-font);
+  line-height: var(--height);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+}
+.body--long-select > select:hover {
+  color: var(--color-4);
+  cursor: pointer;
+}
+.body--long-select i {
+  color: var(--primary-text-color);
+}
+.body--long-select option {
+  color: var(--primary-text-color);
+  font-size: 1.6rem;
+}
+.body--long-select > select:focus {
+  outline: none;
+}

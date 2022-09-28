@@ -1,0 +1,88 @@
+.body__viewer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--primary-gap);
+}
+.body__viewer-table {
+  width: 100%;
+  position: absolute;
+  border-collapse: collapse;
+}
+.body__viewer-table--head th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.body__viewer-table--head tr {
+  background-color: var(--color-3);
+}
+.body__viewer-table--body tr:nth-child(even) {
+  background-color: var(--color-3);
+}
+.viewer-table__column1 {
+  width: 10%;
+  text-align: center;
+}
+.viewer-table__column2 {
+  width: 50%;
+}
+.viewer-table__column3{
+  width: 30%;
+}
+.viewer-table__column4{
+  width: 10%;
+}
+.viewer-table__thaoTac--delete:hover {
+  cursor: pointer;
+}
+.viewer-table__thaoTac--delete:hover > i {
+  color: var(--color-1);
+}
+.body__viewer-table th, .viewer-table__middleColumn {
+  text-align: left;
+  padding-left: 1.2rem;
+}
+.viewer-table__firstColumn, .viewer-table__middleColumn, .viewer-table__lastColumn {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 1.2rem;
+}
+.viewer-table__middleColumn--tenVanBan {
+  display: flex;
+  flex-direction: row;
+  gap: var(--secondary-gap);
+  align-items: center;
+}
+.body__viewer-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.body__viewer-pagination > li {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  border-radius: 20%;
+  margin: 0 calc(var(--primary-gap) / 3);
+  list-style: none;
+}
+.body__viewer-pagination > li:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 1px rgb(26 25 25 / 50%);
+  background-image: linear-gradient(45deg, var(--color-4), var(--color-3));
+}
+.body__viewer-pagination--active {
+  box-shadow: 0 0 3px 1px rgb(26 25 25 / 50%);
+  background-image: linear-gradient(45deg, var(--color-4), var(--color-3));
+}
+.body__viewer-pagination > li > i {
+  position: absolute;
+  transform: translateY(29%);
+}

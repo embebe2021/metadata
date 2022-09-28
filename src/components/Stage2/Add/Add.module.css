@@ -1,0 +1,13 @@
+.body-left-stage2-organization__add {
+
+}
+.body--input-date-status {
+  color: red;
+  font-weight: bold;
+  margin-bottom: var(--secondary-gap);
+  animation-name: anim-lineUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}

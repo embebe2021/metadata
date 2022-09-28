@@ -1,0 +1,62 @@
+.body-right {
+  
+  background-color: var(--color-2);
+  flex-basis: 50%;
+  padding: var(--primary-gap);
+  height: min-content;
+  animation-name: showAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  
+}
+.body-right__navbar {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: var(--secondary-gap);
+}
+.body-right__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: var(--secondary-gap);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body-right__title > h2 {
+  display: inline-block;
+  margin: 0 0 0 var(--secondary-gap);
+  line-height: 3rem;
+}
+.body-right__body {
+  position: relative;
+  width: 100%;
+}
+@keyframes showAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .body-right {
+    order: 2;
+    position: sticky;
+    top: calc(10rem + var(--primary-gap));
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .body-right {
+    order: 1;
+    position: relative;
+    width: 100%;
+  }
+}
+
